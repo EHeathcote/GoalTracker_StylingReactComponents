@@ -4,6 +4,7 @@ import styled from "styled-components";
 // a tagged template literal (defaujlt JS feature) - what is passed between backticks will be passed to button method, which when executed will return a button
 const Button = styled.button`
   // do not need to add .button class, will auto appply these to teh button created
+  width: 100%;
   font: inherit;
   padding: 0.5rem 1.5rem;
   border: 1px solid #8b005d;
@@ -15,6 +16,10 @@ const Button = styled.button`
   // pseudo selector for button component
   &:focus {
     outline: none;
+  }
+
+  @media (min-width: 768px) {
+    width: auto;
   }
 
   &:hover,
