@@ -1,3 +1,4 @@
+/* css modules renames these classes to a unique name which you can see in the Elements dev tools */
 .button {
   font: inherit;
   padding: 0.5rem 1.5rem;
